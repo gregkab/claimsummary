@@ -1,0 +1,23 @@
+{
+  "name": "claim-action-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "*",
+    "axios": "*",
+    "tailwindcss": "*",
+    "postcss": "*",
+    "autoprefixer": "*"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "*",
+    "vite": "*"
+  }
+} 

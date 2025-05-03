@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+sqlalchemy
+sqlalchemy-utils
+psycopg2-binary
+pydantic
+python-dotenv
+openai
+# Standard email libraries
+email-validator
+# Alternative for email parsing
+beautifulsoup4
+html2text
+# Testing
+pytest
+httpx 

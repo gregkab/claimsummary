@@ -31,23 +31,23 @@
 - [x] Create sample seed data (3 claims, 5 emails, 8 action items)
 
 ## 3. Frontend Development (React + TailwindCSS)
-- [ ] Set up React project with TailwindCSS
-- [ ] Create basic component structure
-- [ ] Implement pages:
-  - [ ] Claim List Page
-    - [ ] Search functionality
-    - [ ] Claim selection
-  - [ ] Claim Detail Page
-    - [ ] Claim metadata display
-    - [ ] Email thread display (last 3)
-    - [ ] Action items table with filtering
-    - [ ] Complete/update action item functionality
-  - [ ] Email Submission Component
-    - [ ] Text area for email content
-    - [ ] Submit button to trigger analysis
-- [ ] Set up API integration with backend
-- [ ] Implement responsive design with TailwindCSS
-- [ ] Add basic error handling and loading states
+- [x] Set up React project with TailwindCSS
+- [x] Create basic component structure
+- [x] Implement pages:
+  - [x] Claim List Page
+    - [x] Search functionality
+    - [x] Claim selection
+  - [x] Claim Detail Page
+    - [x] Claim metadata display
+    - [x] Email thread display (last 3)
+    - [x] Action items table with filtering
+    - [x] Complete/update action item functionality
+  - [x] Email Submission Component
+    - [x] Text area for email content
+    - [x] Submit button to trigger analysis
+- [x] Set up API integration with backend
+- [x] Implement responsive design with TailwindCSS
+- [x] Add basic error handling and loading states
 
 ## 4. Infrastructure Setup
 - [ ] Set up backend deployment on Railway or Render

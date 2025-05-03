@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "*",
-    "react-dom": "*",
-    "react-router-dom": "*",
-    "axios": "*",
-    "tailwindcss": "*",
-    "postcss": "*",
-    "autoprefixer": "*"
+    "autoprefixer": "^10.4.14",
+    "axios": "^1.4.0",
+    "postcss": "^8.4.24",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.0",
+    "tailwindcss": "^3.3.2"
   },
   "scripts": {
     "dev": "vite",
@@ -17,7 +17,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "*",
-    "vite": "*"
+    "@tailwindcss/forms": "^0.5.10",
+    "@vitejs/plugin-react": "^4.0.1",
+    "vite": "^4.3.9"
   }
-} 
+}

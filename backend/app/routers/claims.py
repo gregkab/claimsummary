@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List, Optional
 from ..database import get_db
-from ..models import Claim, ClaimCreate, ClaimSchema
+from ..models import Claim, ClaimCreate, ClaimSchema, ActionItem, ActionItemSchema
 
 router = APIRouter(
     prefix="/api/claims",
@@ -72,4 +72,21 @@ def delete_claim(claim_id: int, db: Session = Depends(get_db)):
     
     db.delete(db_claim)
     db.commit()
-    return None 
+    return None
+
+@router.get("/{claim_id}/action-items/", response_model=List[ActionItemSchema])
+def read_claim_action_items(claim_id: int, db: Session = Depends(get_db)):
+    """
+    Get action items for a specific claim
+    """
+    # Check if claim exists
+    db_claim = db.query(Claim).filter(Claim.id == claim_id).first()
+    if db_claim is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Claim with id {claim_id} not found"
+        )
+    
+    # Get action items for this claim
+    action_items = db.query(ActionItem).filter(ActionItem.claim_id == claim_id).all()
+    return action_items 
